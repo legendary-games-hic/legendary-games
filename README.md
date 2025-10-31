@@ -1,2 +1,6 @@
-# legendary-games
-The website for our HIC project Legendary Games
+# Legendary Games Website 💥💣💥
+
+### Project for Human-Interface Computing class Fall 2025  💀💣
+
+- Professor Giovanni Villalobos 💥😝
+- Studendents: Joao Donaton, Lucas Oliveira, Nathan Yoak, Dovlet Gurbanov 👌😂
