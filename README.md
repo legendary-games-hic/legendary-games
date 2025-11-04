@@ -15,7 +15,7 @@
 - Have node.JS installed
 - run `npm run dev` to start the webserver locally
 
-# API ey setup
+# API key setup
 - For game data, we are using: https://api.rawg.io/docs/
 - You need to make an account and get an API key 
 - DO NOT put the API key in the code
@@ -27,3 +27,11 @@
     - This will automatically import the key from the `.env.local` file and put it in that variable
 
 ### API Requests Guide
+- For now see the example in `src/pages/MainPage.jsx` for how to fetch data from the API
+- There are a few things you need to know:
+    - This uses the `useState` hook to keep track of the data and update it (explanation here https://dev.to/mikhaelesa/what-is-usestate-in-react-47io)
+    - We also use the `useEffect` hook (VERY IMPORTANT, see https://stackoverflow.com/questions/77009292/what-is-useeffect-in-react for when useEffect is called)
+        - In this example useEffect will only be called when the component is first rendered
+        - So this is where we put our API request to fetch the game data
+    - The API request is done using the axios library to do a simple get request and pass the API key for authentication
+    - See https://api.rawg.io/docs/ for full description of API capabilities (includes game data, game searching, screenshots of games, scores, and mcsre...)
