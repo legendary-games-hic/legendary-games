@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import MainPage from './pages/MainPage'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
+import './assets/css/globals.css';
 
 function App() {
   return (

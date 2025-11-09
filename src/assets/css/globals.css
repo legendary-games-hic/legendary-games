@@ -1,3 +1,5 @@
+/* base colors that we can reuse - don't change */
+
 .bg-navbar-and-footer{
     background-color: #121212;
 }
@@ -12,4 +14,11 @@
 
 .legendary-blue-color{
     color: #2B78E4;
+}
+
+/* specific classes for stuff like hover color changing, transitions and more.
+Note: the stuff is here is supposed to be used everywhere. If you are making something specific to a page, make it its own CSS file and import.
+*/
+.navbar-link-hover-color:hover{
+    color:#106b39
 }

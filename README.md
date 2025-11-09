@@ -6,10 +6,8 @@
 - Studendents: Joao Donaton, Lucas Oliveira, Nathan Yoak, Dovlet Gurbanov 👌😂
 
 ### Project Details for Team
-- Green: 1DB954
-- Blue: 2B78E4
-- Background gray: 212121
-- Navbar/Footer gray: 121212
+- All of our colors (background, navfooter colors, green, blue) are defined in classes under `src/assets/css/globals.css` (already imported globally )
+- Bootstrap classes and icons are imported globally and ready to use (see https://icons.getbootstrap.com/ for icon options)
 
 ### How to run
 - Have node.JS installed
