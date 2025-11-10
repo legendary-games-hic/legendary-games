@@ -3,3 +3,22 @@
     background: none;
     text-decoration: none;
 }
+
+.grid-layout-main-page{
+    display: grid;
+
+    grid-template-columns: 60% 40%;
+}
+
+.main-hr{
+    border-top: 2px solid;
+    width: 50%;
+    opacity: 1;
+}
+
+.main-featured-game-image{
+    width: 90%;
+    height: auto;
+
+    border: 0.075rem solid #1DB964;
+}

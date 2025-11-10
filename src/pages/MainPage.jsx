@@ -12,7 +12,7 @@ export default function MainPage() {
         let cancelled = false;
         (async () => {
         try {
-            const { data } = await axios.get(`https://api.rawg.io/api/games/64`,
+            const { data } = await axios.get(`https://api.rawg.io/api/games/419294`,
                 {params: {key: `${APIKEY}`}}
             );
             if (!cancelled) {
@@ -26,12 +26,15 @@ export default function MainPage() {
     }, [])
 
     return (
-        <div className='container'>
-            {/* <button className='btn-success'>This is the main page, here is the image and raw JSON data for game with id <b>64</b>, name fetched from rawg api: <b>{data['name']}</b></button>
-            <img src={data['background_image']}>
-            </img>
-            <p>{JSON.stringify(data)}</p> */}
-            some content here
+        <div className='bg-pages grid-layout-main-page'>
+            <div>
+                <h5>Featured and Recommended</h5>
+                <hr className='legendary-blue-color main-hr'/>
+                <img src={data['background_image']} className='main-featured-game-image'/>
+            </div>
+            <div>
+                other content
+            </div>
         </div>
     )
 }

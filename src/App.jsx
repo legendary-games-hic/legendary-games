@@ -1,4 +1,3 @@
-import './assets/css/App.css'
 import { Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 
@@ -7,16 +6,19 @@ import MainPage from './pages/MainPage'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import './assets/css/globals.css';
+import './assets/css/App.css'
 
 function App() {
   return (
     <>
       <Navbar/>
-      <Routes>
-        <Route path='/' element={<MainPage/>}/>
-        <Route path='/games' element={<h1>games</h1>}/>
-        <Route path='/about' element={<h1>about</h1>}/>
-      </Routes>
+      <div className='page-content-container'>
+        <Routes>
+          <Route path='/' element={<MainPage/>}/>
+          <Route path='/games' element={<h1>games</h1>}/>
+          <Route path='/about' element={<h1>about</h1>}/>
+        </Routes>
+      </div>
     </>
   )
 }
