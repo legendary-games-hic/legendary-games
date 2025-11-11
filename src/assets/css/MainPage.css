@@ -1,9 +1,3 @@
-.nav-link:focus{ 
-    color: #1DB964 !important;
-    background: none;
-    text-decoration: none;
-}
-
 .grid-layout-main-page{
     display: grid;
 

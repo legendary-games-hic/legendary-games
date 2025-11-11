@@ -1,13 +1,16 @@
 import {useEffect, useState} from 'react'
 import axios from 'axios'
+import SmallGameCard from '../components/SmallGameCard'
 
 import '../assets/css/MainPage.css'
 
 const APIKEY = import.meta.env.VITE_API_KEY
 
 export default function MainPage() {
-    const [data, setData] = useState('loading...')
+    const [data, setData] = useState({})
+    const [moreGameData, setMoreGameData] = useState([])
 
+    // this one gets the data for the main featured game
     useEffect(()=>{
         let cancelled = false;
         (async () => {
@@ -17,6 +20,31 @@ export default function MainPage() {
             );
             if (!cancelled) {
                 setData(data);
+            }
+        } catch (e) {
+            if (!cancelled) setErr(e);
+        }
+        })();
+        return () => { cancelled = true; };
+    }, [])
+    
+    // this one gets the data for the other smaller games
+    useEffect(()=>{
+        let cancelled = false;
+        (async () => {
+        try {
+            const { data } = await axios.get(`https://api.rawg.io/api/games?page_size=6&page=2&ordering=-metacritic`,
+                {params: {key: `${APIKEY}`}}
+            );
+            if (!cancelled) {
+                const gameResults = data['results'];
+
+                let res = [];
+                for(const game of gameResults){
+                    res.push({name: game['name'], image: game['background_image']})
+                }
+
+                setMoreGameData(res);
             }
         } catch (e) {
             if (!cancelled) setErr(e);
@@ -39,7 +67,13 @@ export default function MainPage() {
                 </div>
             </div>
             <div>
-                other content
+                <p>Other Popular Games</p>
+
+                <div className='d-flex flex-wrap justify-content-around gap-3'>
+                    {moreGameData.map((game => (
+                        <SmallGameCard imageSrc={game['image']} name={game['name']} key={game['name']}/>
+                    )))}
+                </div>
             </div>
         </div>
     )

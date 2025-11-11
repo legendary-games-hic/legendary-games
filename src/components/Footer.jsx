@@ -7,12 +7,12 @@ export default function Footer() {
     <nav className='navbar bg-navbar-and-footer d-flex justify-content-around'>
         <ul className='navbar-nav flex-row gap-5'>
 			<li className='nav-item mx-auto'>
-				<Link className='nav-link legendary-green-color navbar-link-hover-color' to='/library'>
+				<Link className='nav-link legendary-green-color navbar-link-hover-color fs-2' to='/support'>
 					Support
 				</Link>
 			</li>
 			<li className='nav-item mx-aut'>
-				<Link className='nav-link legendary-green-color navbar-link-hover-color' to='/community'>
+				<Link className='nav-link legendary-green-color navbar-link-hover-color fs-2' to='/about'>
 					About
 				</Link>
 			</li>

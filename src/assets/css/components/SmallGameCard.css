@@ -1,0 +1,43 @@
+.small-game-card-container img{
+    width: 11vw;
+    height: auto;
+}
+
+.small-game-card-container p{
+    margin-top: 0.25rem;
+    font-size: 0.5rem;
+}
+
+.small-game-card-container{
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+.small-game-card-container:hover{
+    transform: scale(1.1);
+}
+
+.small-game-card-overlay{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    transition: all 0.5s ease-in-out;
+}
+
+.small-game-card-name{
+    display: none;
+    color: white;
+    margin: 1rem;
+    font-size: 0.6rem !important;
+}
+
+.small-game-card-container:hover .small-game-card-overlay{
+    background: rgba(30,30,30,0.7)
+}
+
+.small-game-card-container:hover .small-game-card-name{
+    display: inline;
+}

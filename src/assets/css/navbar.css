@@ -8,3 +8,9 @@
 
     color: #1DB954;
 }
+
+.nav-link:focus, .navbar-brand:focus{ 
+    color: #1DB964 !important;
+    background: none;
+    text-decoration: none;
+}
