@@ -16,6 +16,10 @@
     color: #2B78E4;
 }
 
+.paragraph-gray-color{
+    color: rgb(169, 169, 169);
+}
+
 /* specific classes for stuff like hover color changing, transitions and more.
 Note: the stuff is here is supposed to be used everywhere. If you are making something specific to a page, make it its own CSS file and import.
 */

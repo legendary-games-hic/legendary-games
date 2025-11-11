@@ -31,6 +31,8 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    opacity: 1;
+    transition: all 0.5s ease-out;
 }
 
 .small-game-card-container:hover .small-game-card-overlay{
@@ -38,5 +40,5 @@
 }
 
 .small-game-card-container:hover .small-game-card-name{
-    display: none;
+    opacity: 0;
 }

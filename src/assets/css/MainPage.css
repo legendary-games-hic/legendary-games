@@ -15,7 +15,7 @@
     height: auto;
     align-self: left;
 
-    border: 0.075rem solid #1DB964;
+    border: 0.125rem solid #1DB964;
 }
 
 .main-featured-game-description{
@@ -33,6 +33,5 @@
 }
 
 .main-featured-game-genres{
-    color: rgb(169, 169, 169);
     font-style: italic;
 }
