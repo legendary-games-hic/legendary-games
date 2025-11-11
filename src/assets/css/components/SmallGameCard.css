@@ -1,11 +1,8 @@
 .small-game-card-container img{
+    aspect-ratio: 16/9;
     width: 11vw;
     height: auto;
-}
-
-.small-game-card-container p{
-    margin-top: 0.25rem;
-    font-size: 0.5rem;
+    object-fit: cover;
 }
 
 .small-game-card-container{
@@ -23,21 +20,23 @@
     inset: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0);
+    background: rgba(30,30,30,0.5);
     transition: all 0.5s ease-in-out;
 }
 
 .small-game-card-name{
-    display: none;
     color: white;
     margin: 1rem;
-    font-size: 0.6rem !important;
+    font-size: 1rem !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .small-game-card-container:hover .small-game-card-overlay{
-    background: rgba(30,30,30,0.7)
+    background: rgba(0,0,0,0)
 }
 
 .small-game-card-container:hover .small-game-card-name{
-    display: inline;
+    display: none;
 }

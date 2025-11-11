@@ -10,7 +10,7 @@ export default function MainPage() {
     const [data, setData] = useState({})
     const [moreGameData, setMoreGameData] = useState([])
 
-    // this one gets the data for the main featured game
+    // this one gets the data for the main featured game (Blue Protocol)
     useEffect(()=>{
         let cancelled = false;
         (async () => {
@@ -33,7 +33,7 @@ export default function MainPage() {
         let cancelled = false;
         (async () => {
         try {
-            const { data } = await axios.get(`https://api.rawg.io/api/games?page_size=6&page=2&ordering=-metacritic`,
+            const { data } = await axios.get(`https://api.rawg.io/api/games?page_size=8&page=2&ordering=-metacritic`,
                 {params: {key: `${APIKEY}`}}
             );
             if (!cancelled) {
@@ -58,13 +58,15 @@ export default function MainPage() {
             <div>
                 <h5>Featured and Recommended</h5>
                 <hr className='legendary-blue-color main-hr'/>
+                <h2>Blue Protocol: Star Resonance</h2>
+                <p className='main-featured-game-genres'>{data['genres'] == undefined ? 'Loading...' : data['genres'].map((d) => d['name']).join(', ')}</p>
                 <div className='main-featured-game-container'>
                     <img src={data['background_image']} className='main-featured-game-image'/>
-                    <p className='main-featured-game-description'>Blue Protocol: Star Resonance expands the Blue Protocol universe with a vibrant MMORPG experience. 
-                        Create your own hero, team up for strategic raids, or simply relax and have fun with friends fishing,
-                        crafting, and endless exploration. Adventure awaits! <i>Start Resonance</i> provides real-time dodging
-                     and combo-driven fights alongside gathering and social systems like trading or guilds.</p>
                 </div>
+                <p className='main-featured-game-description'>Blue Protocol: Star Resonance expands the Blue Protocol universe with a vibrant MMORPG experience. 
+                    Create your own hero, team up for strategic raids, or simply relax and have fun with friends fishing,
+                    crafting, and endless exploration. Adventure awaits! <i>Start Resonance</i> provides real-time dodging
+                    and combo-driven fights alongside gathering and social systems like trading or guilds.</p>
             </div>
             <div>
                 <p>Other Popular Games</p>

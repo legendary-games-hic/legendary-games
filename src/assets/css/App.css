@@ -10,4 +10,5 @@ html, body, #root{
 
 .page-content-container{
   margin: 8vh 14vw;
+  min-height: 75vh;
 }

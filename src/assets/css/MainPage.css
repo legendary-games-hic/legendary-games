@@ -27,4 +27,12 @@
 .main-featured-game-container{
     display: flex;
     flex-direction: column;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-featured-game-genres{
+    color: rgb(169, 169, 169);
+    font-style: italic;
 }
