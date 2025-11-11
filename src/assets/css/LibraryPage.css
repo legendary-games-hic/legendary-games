@@ -1,0 +1,11 @@
+.library-page-container{
+    display: grid;
+
+    grid-template-columns: 30% 70%;
+}
+
+.library-title-hr{
+    border-top: 2px solid;
+    width: 40%;
+    opacity: 1;
+}

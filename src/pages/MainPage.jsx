@@ -24,7 +24,7 @@ export default function MainPage() {
                 setData(data);
             }
         } catch (e) {
-            if (!cancelled) setErr(e);
+            if (!cancelled) console.log(`error occured ${e}`);
         }
         })();
         return () => { cancelled = true; };
@@ -49,7 +49,7 @@ export default function MainPage() {
                 setMoreGameData(res);
             }
         } catch (e) {
-            if (!cancelled) setErr(e);
+            if (!cancelled) console.log(`error occured ${e}`);
         }
         })();
         return () => { cancelled = true; };
