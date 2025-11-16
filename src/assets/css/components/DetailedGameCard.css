@@ -16,6 +16,8 @@
 }
 
 .detailed-game-card-overlay{
+    display: flex;
+    flex-direction: column;
     position: absolute;
     inset: 0;
     width: 100%;
@@ -36,9 +38,39 @@
 }
 
 .detailed-game-card-container:hover .detailed-game-card-overlay{
-    background: rgba(30,30,30,0.5);
+    background: rgba(30,30,30,0.7);
 }
 
 .detailed-game-card-container:hover .detailed-game-card-details{
     opacity: 1;
+}
+
+.detailed-game-card-gamename{
+    font-size: 1.5vw !important;
+}
+
+.detailed-game-card-descriptors{
+    font-size: 0.7vw !important;
+    color: rgb(179, 179, 179);
+    margin-top: 0.5vh;
+    margin-bottom: 0;
+}
+
+.detailed-game-favorite-star{
+    position: absolute;
+    top: 0.3vh;
+    right: 0.5vw;
+    color: rgb(213, 184, 66);
+}
+
+.detailed-game-favorite-button{
+    font-size: 1vh !important;
+    border: 1px solid;
+    border-radius: 1rem;
+    background-color: #2B78E4;
+    width: 30%;
+
+    margin-top: auto;
+    margin-bottom: 0.5vh;
+    align-self: flex-end;
 }

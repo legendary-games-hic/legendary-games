@@ -21,7 +21,14 @@ export default function Library() {
 						{ params: { key: `${APIKEY}` } }
 					);
 					
-					gameData.push({name: data['name'], releaseDate: data['released'], developer: data['developers'][0]['name'], image: data['background_image']})
+					let isFav = false;
+					const favorites = JSON.parse(localStorage.getItem('favorites'))
+					
+					if(favorites.includes(id)){
+						isFav = true;
+					}
+
+					gameData.push({ id: id, name: data['name'], releaseDate: data['released'], developer: data['developers'][0]['name'], image: data['background_image'], isFavorite: isFav})
 				}
 
 				if (!cancelled) {
@@ -44,7 +51,8 @@ export default function Library() {
 			</div>
 			<div className='d-flex flex-wrap gap-4'>
 				{libraryGames.map((game => (
-					<DetailedGameCard imageSrc={game['image']} name={game['name']} releaseDate={game['releaseDate']} developer={game['developer']} key={game['name']} />
+					<DetailedGameCard id={game['id']} imageSrc={game['image']} name={game['name']} releaseDate={game['releaseDate']} developer={game['developer']} key={game['name']} 
+					isFavorite={game['isFavorite']}/>
 				)))}
 			</div>
 		</div>
