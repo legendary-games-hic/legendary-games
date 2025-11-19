@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 
 import MainPage from './pages/MainPage'
 import LibraryPage from './pages/LibraryPage'
+import SupportPage from './pages/SupportPage'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -20,6 +21,7 @@ function App() {
           <Route path='/library' element={<LibraryPage/>}/>
           <Route path='/games' element={<h1>games</h1>}/>
           <Route path='/about' element={<h1>about</h1>}/>
+          <Route path='/support' element={<SupportPage/>}/>
         </Routes>
       </div>
 	  <Footer/>

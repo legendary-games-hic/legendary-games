@@ -1,0 +1,13 @@
+.support-title{
+    text-align: center;
+    font-size: 2vw;
+}
+
+.support-title-hr{
+    border-top: 2px solid;
+    width: 60%;
+    opacity: 1;
+    margin: auto;
+
+    margin-bottom: 10vh;
+}

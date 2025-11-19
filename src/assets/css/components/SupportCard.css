@@ -1,0 +1,29 @@
+.support-card-container{
+    display: grid;
+
+    grid-template-columns: 30% 70%;
+
+    width: 25vw;
+    height: 12.5vh;
+
+    padding: 1rem 2rem;
+
+    border: 2px solid black;
+    
+    background-color: rgb(46, 46, 46);
+}
+
+.support-card-text-description{
+    font-size: 0.85vw;
+    color: rgb(166, 166, 166);
+}
+
+.support-card-text-title{
+    font-size: 1.2vw;
+}
+
+.support-card-icon{
+    color: black;
+
+    font-size: 5vh;
+}
