@@ -11,3 +11,28 @@
 
     margin-bottom: 10vh;
 }
+
+.support-faq-container{
+    width: 100%;
+}
+
+.support-faq-hr{
+    border-top: 1px solid;
+    width: 30%;
+    opacity: 1;
+}
+
+.big-q{    
+}
+
+.support-faq-question-container{
+}
+
+.support-faq-queston{
+    margin-top: 1rem;
+}
+
+.support-faq-answer{
+    font-size: 0.8rem;
+    color: rgb(166, 166, 166);
+}
