@@ -9,3 +9,7 @@
     width: 40%;
     opacity: 1;
 }
+
+.library-statistics-list li p{
+    color: rgb(212, 211, 211);
+}

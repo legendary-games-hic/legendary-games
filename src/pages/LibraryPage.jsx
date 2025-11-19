@@ -47,7 +47,12 @@ export default function Library() {
 				<h4>My Games</h4>
 				<hr className='legendary-blue-color library-title-hr'></hr>
 
-				<p>You have {LIBRARY_GAME_IDS.length} games</p>
+				<h5>Library Statistics</h5>
+				<ul className='library-statistics-list'>
+					<li>
+						<p>You have <b className='legendary-green-color'>{LIBRARY_GAME_IDS.length}</b> games</p>
+					</li>
+				</ul>
 			</div>
 			<div className='d-flex flex-wrap gap-4'>
 				{libraryGames.map((game => (

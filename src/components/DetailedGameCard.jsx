@@ -5,9 +5,11 @@ export default function DetailedGameCard({ id, name, imageSrc, releaseDate, deve
 	const [isFavoriteState, setIsFavoriteState] = useState(isFavorite)
 
 	function handleFavoriteClick() {
+		console.log('click')
+		console.log(isFavoriteState)
 		let favorites = JSON.parse(localStorage.getItem('favorites'))
 
-		if(isFavorite){
+		if(isFavoriteState){
 			favorites = favorites.filter(favid => favid != id)
 			setIsFavoriteState(false);
 		}
