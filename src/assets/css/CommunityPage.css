@@ -1,0 +1,154 @@
+/* Page layout + spacing */
+.community-page-container {
+  padding: 2rem 3rem 3rem;
+  min-height: 80vh;
+}
+
+/* HEADER */
+.community-header {
+  margin-bottom: 1.5rem;
+}
+
+.community-title {
+  font-size: 1.6rem;
+  margin: 0;
+  border-bottom: 2px solid #1db964; /* green underline */
+  padding-bottom: 0.2rem;
+}
+
+/* Search box */
+.community-search-input {
+  background-color: #111;
+  border: 1px solid #d4d4d4;
+  color: #d4d4d4;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+.community-search-input:focus {
+  outline: none;
+  border-color: #1db964;
+}
+
+/* Pagination row */
+.community-pagination {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.community-page-btn {
+  background-color: transparent;
+  border: 1px solid #d4d4d4;
+  color: #d4d4d4;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.community-page-btn.active {
+  border-color: #1db964;
+  color: #1db964;
+}
+
+.community-page-btn:hover {
+  border-color: #1db964;
+  color: #1db964;
+}
+
+.community-page-ellipsis {
+  color: #d4d4d4;
+  font-size: 0.9rem;
+}
+
+/* Thread list container */
+.community-thread-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* Thread card styling */
+.community-thread-card {
+  background-color: #181818;
+  border: 1px solid #2a2a2a;
+  padding: 0.7rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.community-thread-card:hover {
+  border-color: #1db964;
+  background-color: #202020;
+}
+
+/* Thread left icon */
+.community-thread-icon {
+  color: #1db964;
+  font-size: 1.1rem;
+}
+
+/* Thread title */
+.community-thread-title {
+  color: #f0f0f0;
+  font-size: 0.95rem;
+}
+
+/* Thread metadata (right side) */
+.community-thread-meta {
+  font-size: 0.85rem;
+  color: #d4d4d4;
+}
+
+.community-meta-icon {
+  color: #1db964;
+  font-size: 0.9rem;
+}
+
+.community-thread-time {
+  white-space: nowrap;
+}
+
+/* Two-column layout: left = threads, right = news */
+.community-main-grid {
+  display: grid;
+  grid-template-columns: 70% 30%; /* adjust to 75/25 or 65/35 if you want */
+  gap: 1.5rem;
+}
+
+/* Left column just stacks what you already had */
+.community-main-left {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Right-side news column */
+.community-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.community-sidebar-card {
+  background-color: #181818;
+  border: 1px solid #2a2a2a;
+  padding: 0.75rem 1rem;
+}
+
+.community-sidebar-title {
+  color: #1db964; /* matches your green */
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.community-sidebar-body {
+  color: #d4d4d4;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 0;
+}

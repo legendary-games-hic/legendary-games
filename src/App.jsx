@@ -6,6 +6,7 @@ import MainPage from './pages/MainPage'
 import LibraryPage from './pages/LibraryPage'
 import SupportPage from './pages/SupportPage'
 import AboutPage from './pages/AboutPage'
+import CommunityPage from "./pages/CommunityPage";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -22,6 +23,7 @@ function App() {
           <Route path='/library' element={<LibraryPage/>}/>
           <Route path='/games' element={<h1>games</h1>}/>
           <Route path='/about' element={<AboutPage/>}/>
+          <Route path='/community' element={<CommunityPage/>}/>
           <Route path='/support' element={<SupportPage/>}/>
         </Routes>
       </div>

@@ -17,13 +17,12 @@
   justify-content: center;
   align-items: flex-start;
   align-self: start;
-         /* tweak this up/down if you want more/less height */
 }
 
 /* Make the image bigger on About page without affecting MainPage */
 .about-page-container .main-featured-game-image {
-  width: 100%;        /* fill the entire right column */
-  max-width: none;    /* or just delete the max-width line */
+  width: 100%;       
+  max-width: none;    
   height: auto;
   object-fit: cover;
   margin-top: 1rem;
