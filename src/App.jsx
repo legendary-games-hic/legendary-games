@@ -7,6 +7,7 @@ import LibraryPage from './pages/LibraryPage'
 import SupportPage from './pages/SupportPage'
 import AboutPage from './pages/AboutPage'
 import CommunityPage from "./pages/CommunityPage";
+import NewsPage from './pages/NewsPage'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -25,6 +26,7 @@ function App() {
           <Route path='/about' element={<AboutPage/>}/>
           <Route path='/community' element={<CommunityPage/>}/>
           <Route path='/support' element={<SupportPage/>}/>
+          <Route path='/news' element={<NewsPage/>}/>
         </Routes>
       </div>
 	  <Footer/>
