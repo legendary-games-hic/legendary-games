@@ -16,7 +16,7 @@ export default function NewsPage(){
     return(
         <div>
             <div>
-                <h5>Legendary Games News</h5>
+                <h5 className='page-title'>Legendary Games News</h5>
                 <hr className='legendary-blue-color main-hr'/>
                 <div class="games-section">
                     <div class="game-card">

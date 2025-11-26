@@ -26,6 +26,11 @@ export default function Navbar() {
 				</Link>
 			</li>
 			<li className='nav-item mx-auto'>
+				<Link className='nav-link legendary-green-color navbar-link-hover-color fs-3' to='/games'>
+					Games
+				</Link>
+			</li>
+			<li className='nav-item mx-auto'>
 				<Link className='nav-link legendary-green-color navbar-link-hover-color fs-3' to='/profile'>
 					<i className='bi bi-cart'></i>
 				</Link>
