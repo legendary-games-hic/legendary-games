@@ -22,7 +22,12 @@ export default function Library() {
 					);
 					
 					let isFav = false;
-					const favorites = JSON.parse(localStorage.getItem('favorites'))
+					let favorites = JSON.parse(localStorage.getItem('favorites'))
+
+					if(!favorites) {
+						favorites = [];
+						localStorage.setItem('favorites', '[]')
+					}
 					
 					if(favorites.includes(id)){
 						isFav = true;
