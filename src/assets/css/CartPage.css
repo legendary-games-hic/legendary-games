@@ -1,0 +1,64 @@
+.cart-page-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.cart-game-prices, .cart-payment-box {
+    width: 80%;
+    max-width: 1100px;
+    background-color: #121212;
+    border: 1.5px;
+    border-style: solid;
+    border-color: black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.game-separator {
+    border: none;
+    border-top: 3px solid #2B78E4;
+    opacity: 1;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.payment-box {
+    display: flex;
+}
+
+.botton-part {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botton-part button{
+    background-color: #2b78e4;
+    color: white;
+    border-radius: 10px;
+    border-color: transparent;
+    transition: 0.5s;
+    font-size: 0.9rem;
+    height: 25px;
+    width: 45px;
+}
+
+
+.botton-part button:hover{
+    background-color: #04224d;
+}
+
+
+.payment-select-box {
+    background-color: #2b78e4;
+    color: white;
+    border-radius: 10px;
+    border-color: transparent;
+    transition: 0.5s;
+    font-size: 0.9rem;
+}

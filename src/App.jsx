@@ -6,9 +6,11 @@ import MainPage from './pages/MainPage'
 import LibraryPage from './pages/LibraryPage'
 import SupportPage from './pages/SupportPage'
 import AboutPage from './pages/AboutPage'
-import CommunityPage from "./pages/CommunityPage";
+import CommunityPage from "./pages/CommunityPage"
 import NewsPage from './pages/NewsPage'
 import GamesPage from './pages/GamesPage'
+import ProfilePage from './pages/ProfilePage'
+import CartPage from './pages/CartPage'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -28,6 +30,8 @@ function App() {
           <Route path='/community' element={<CommunityPage/>}/>
           <Route path='/support' element={<SupportPage/>}/>
           <Route path='/news' element={<NewsPage/>}/>
+          <Route path='/profile' element={<ProfilePage/>}/>
+          <Route path='/cart' element={<CartPage/>}/>
           
         </Routes>
       </div>

@@ -1,0 +1,46 @@
+.cart-game-card-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+.cart-game-card-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart-card-name {
+    margin-top: 5px;
+    margin-left: 8px;
+    margin-bottom: 5%;
+    text-align: left;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.cart-card-price {
+    margin-bottom: 0;
+    margin-right: 8px;
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+.cart-card-remove {
+    margin-right: 8px;
+    text-align: right;
+    font-size: 0.9rem;
+    transition: 0.4s;
+}
+
+.cart-card-remove:hover {
+    color: #2B78E4;
+    text-decoration: underline;
+}
+
+

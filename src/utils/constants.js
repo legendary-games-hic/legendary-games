@@ -29,3 +29,30 @@ export const SUPPORT_PAGE_ITEMS = [
         description: 'View our frequently asked questions section below.'
     }
 ]
+
+
+// this is for the profile game cards
+export const PROFILE_GAME_IDS = ['22509', '654', '34791']
+
+export const TOTAL_TIME = {
+    '22509': 70,
+    '654': 120, 
+    '34791': 40
+}
+
+export const GAME_TIME = {
+    '22509': 13,
+    '654': 22,
+    '34791': 17
+}
+
+
+// this is for the cart game cards
+
+export const CART_GAME_IDS = ['9767','1007483']
+
+export const GAME_PRICE = {
+    '9767': 14.99,
+    '1007483': 59.49
+}
+
