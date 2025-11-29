@@ -1,6 +1,10 @@
 // src/pages/CommunityPage.jsx
 import { useState } from 'react';
 import '../assets/css/CommunityPage.css';
+import '../assets/css/NewsPage.css'
+
+import cs2Cover from '../assets/images/cs2.png'
+import bf6Cover from '../assets/images/bf6.png'
 
 const THREADS = [
   {
@@ -31,7 +35,7 @@ const THREADS = [
     title: 'Share your best loadouts & builds.',
     replies: 20,
     views: '3k',
-    time: 'October 23th at 4:00 AM',
+    time: 'March 10th at 1:00 AM',
   },
   {
     title: 'Introduce yourself.. what do you play?',
@@ -114,21 +118,25 @@ export default function CommunityPage() {
         </div>
 
         {/* ⭐ RIGHT COLUMN: news / API section */}
-        <aside className="community-sidebar">
-          <div className="community-sidebar-card">
-            <h5 className="community-sidebar-title">Latest Game News</h5>
-            <p className="community-sidebar-body">
-              Placeholder for game news. Later, this can be filled with data from a games API.
-            </p>
-          </div>
+          <aside className="community-sidebar">
 
-          <div className="community-sidebar-card">
-            <h5 className="community-sidebar-title">Upcoming Releases</h5>
-            <p className="community-sidebar-body">
-              Placeholder for upcoming releases or community announcements.
-            </p>
-          </div>
-        </aside>
+            <h5 className="page-title">News</h5>
+            <hr className="legendary-blue-color main-hr" />
+
+              <div className="game-card">
+                <img src={cs2Cover} alt="CS2 Update" className="news-img-l" />
+                <p className="game-title">VALVE announce new big update for CS2!</p>
+                <button className="learn-btn">Learn more</button>
+              </div>
+
+              <div className="game-card">
+                <img src={bf6Cover} alt="Battlefield 6" className="news-img-l" />
+                <p className="game-title">Brand new Battlefield 6 is already out!</p>
+                <button className="learn-btn">Learn more</button>
+              </div>
+
+
+          </aside>
 
       </div>
       {/* ⭐ end community-main-grid */}

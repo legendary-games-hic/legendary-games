@@ -12,7 +12,7 @@
 .community-title {
   font-size: 1.6rem;
   margin: 0;
-  border-bottom: 2px solid #1db964; /* green underline */
+  border-bottom: 2px solid  #1DB9FF; /* blue *//* green underline */
   padding-bottom: 0.2rem;
 }
 
@@ -117,7 +117,7 @@
 /* Two-column layout: left = threads, right = news */
 .community-main-grid {
   display: grid;
-  grid-template-columns: 70% 30%; /* adjust to 75/25 or 65/35 if you want */
+  grid-template-columns: 80% 80%; /* adjust to 75/25 or 65/35 if you want */
   gap: 1.5rem;
 }
 
