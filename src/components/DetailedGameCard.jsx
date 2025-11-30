@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import '../assets/css/components/DetailedGameCard.css'
 
+import LoadingGif from '../assets/gifs/loading.gif'
+
 export default function DetailedGameCard({ id, name, imageSrc, releaseDate, developer, purchaseDate, isFavorite }) {
 	const [isFavoriteState, setIsFavoriteState] = useState(isFavorite)
 
@@ -22,7 +24,7 @@ export default function DetailedGameCard({ id, name, imageSrc, releaseDate, deve
 
 	return (
 		<div className="detailed-game-card-container">
-			<img src={imageSrc} />
+			{imageSrc != undefined ? <img src={imageSrc}/> : <img src={LoadingGif}/>}
 			<div className='detailed-game-card-overlay'>
 				<p className='detailed-game-card-details detailed-game-card-gamename'>{name}</p>
 				<p className='detailed-game-card-details detailed-game-card-descriptors'>By {developer}</p>

@@ -7,6 +7,7 @@ import '../assets/css/MainPage.css'
 import blueProtocolCover from '../assets/images/blue-protocol-cover.png'
 
 const APIKEY = import.meta.env.VITE_API_KEY
+const NUM_OF_GAMES = 8; // number of popular games
 
 export default function MainPage() {
     const [data, setData] = useState({})
@@ -35,7 +36,7 @@ export default function MainPage() {
         let cancelled = false;
         (async () => {
         try {
-            const { data } = await axios.get(`https://api.rawg.io/api/games?page_size=8&page=2&ordering=-metacritic`,
+            const { data } = await axios.get(`https://api.rawg.io/api/games?page_size=${NUM_OF_GAMES}&page=2&ordering=-metacritic`,
                 {params: {key: `${APIKEY}`}}
             );
             if (!cancelled) {
@@ -74,7 +75,10 @@ export default function MainPage() {
                 <p>Other Popular Games</p>
 
                 <div className='d-flex flex-wrap justify-content-around gap-3'>
-                    {moreGameData.map((game => (
+                    {moreGameData.length == 0 ? (new Array(NUM_OF_GAMES)).fill(null).map((v, i) => {
+                            return (<SmallGameCard imageSrc={undefined} name={undefined} key={i}/>) 
+                        })
+                    : moreGameData.map((game => (
                         <SmallGameCard imageSrc={game['image']} name={game['name']} key={game['name']}/>
                     )))}
                 </div>

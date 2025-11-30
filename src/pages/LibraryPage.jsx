@@ -5,6 +5,7 @@ import { LIBRARY_GAME_IDS } from '../utils/constants';
 import DetailedGameCard from '../components/DetailedGameCard'
 
 const APIKEY = import.meta.env.VITE_API_KEY
+const NUM_GAMES_LIBRARY = LIBRARY_GAME_IDS.length
 
 export default function Library() {
 	const [libraryGames, setLibraryGames] = useState([])
@@ -60,7 +61,15 @@ export default function Library() {
 				</ul>
 			</div>
 			<div className='d-flex flex-wrap gap-4'>
-				{libraryGames.map((game => (
+				{libraryGames.length == 0 ? (new Array(NUM_GAMES_LIBRARY)).fill(null).map((v, i) => {
+											return (<DetailedGameCard id={undefined} imageSrc={undefined} name={undefined}
+												 releaseDate={undefined} developer={undefined} key={i} 
+													isFavorite={false}/>) 
+										})
+										
+										:
+				
+				libraryGames.map((game => (
 					<DetailedGameCard id={game['id']} imageSrc={game['image']} name={game['name']} releaseDate={game['releaseDate']} developer={game['developer']} key={game['name']} 
 					isFavorite={game['isFavorite']}/>
 				)))}
