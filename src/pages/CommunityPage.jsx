@@ -57,7 +57,7 @@ export default function CommunityPage() {
 
       {/* TITLE + SEARCH */}
       <div className="community-header d-flex justify-content-between align-items-center">
-        <h4 className="legendary-green-color page-title community-title">
+        <h4 className="legendary-green-color community-title">
           Legendary Games Community
         </h4>
 
@@ -120,9 +120,7 @@ export default function CommunityPage() {
         {/* ⭐ RIGHT COLUMN: news / API section */}
           <aside className="community-sidebar">
 
-            <h5 className="page-title">Gaming News</h5>
-            <hr className="legendary-blue-color main-hr" />
-
+            <h5 className="legendary-green-color community-title">Gaming News</h5>
               <div className="game-card">
                 <img src={cs2Cover} alt="CS2 Update" className="news-img-l" />
                 <p className="game-title">VALVE announce new big update for CS2!</p>
