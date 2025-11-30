@@ -57,7 +57,7 @@ export default function CommunityPage() {
 
       {/* TITLE + SEARCH */}
       <div className="community-header d-flex justify-content-between align-items-center">
-        <h4 className="legendary-green-color community-title">
+        <h4 className="legendary-green-color page-title community-title">
           Legendary Games Community
         </h4>
 
@@ -120,7 +120,7 @@ export default function CommunityPage() {
         {/* ⭐ RIGHT COLUMN: news / API section */}
           <aside className="community-sidebar">
 
-            <h5 className="page-title">News</h5>
+            <h5 className="page-title">Gaming News</h5>
             <hr className="legendary-blue-color main-hr" />
 
               <div className="game-card">
