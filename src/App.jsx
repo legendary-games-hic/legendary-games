@@ -16,6 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import './assets/css/globals.css';
 import './assets/css/App.css'
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path='/profile' element={<ProfilePage/>}/>
           <Route path='/cart' element={<CartPage/>}/>
           
+          <Route path='*' element={<NotFoundPage/>}/>
         </Routes>
       </div>
 	  <Footer/>
