@@ -58,7 +58,7 @@ export default function MainPage() {
     return (
         <div className='bg-pages grid-layout-main-page'>
             <div>
-                <h5>Featured and Recommended</h5>
+                <h5 className='legendary-green-color'>Featured and Recommended</h5>
                 <hr className='legendary-blue-color main-hr'/>
                 <h2>Blue Protocol: Star Resonance</h2>
                 <p className='main-featured-game-genres paragraph-gray-color'>{data['genres'] == undefined ? 'Loading...' : data['genres'].map((d) => d['name']).join(', ')}</p>

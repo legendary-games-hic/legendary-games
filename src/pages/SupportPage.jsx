@@ -8,7 +8,7 @@ import { SUPPORT_PAGE_ITEMS } from '../utils/constants'
 export default function SupportPage() {
 	return (
 		<div className='d-flex flex-column align-items-center'>
-			<h3 className='support-title'>Legendary Games Support Services</h3>
+			<h3 className='support-title legendary-green-color'>Legendary Games Support Services</h3>
 			<hr className='legendary-blue-color support-title-hr'></hr>
 
 			<div className='d-flex flex-row flex-wrap gap-4 align-items-center justify-content-center'
@@ -19,7 +19,7 @@ export default function SupportPage() {
 			</div>
 
 			<div className='support-faq-container'>
-				<h5 className=''>Frequency Asked Question</h5>
+				<h5 className='legendary-green-color'>Frequency Asked Question</h5>
 				<hr className='legendary-blue-color support-faq-hr'></hr>
 
 				{/* We probably wanna make this its own component if we want to put more faq questions */}

@@ -49,7 +49,7 @@ export default function Library() {
 	return (
 		<div className='bg-pages library-page-container'>
 			<div>
-				<h4>My Games</h4>
+				<h4 className='legendary-green-color'>My Games</h4>
 				<hr className='legendary-blue-color library-title-hr'></hr>
 
 				<h5>Library Statistics</h5>
