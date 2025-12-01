@@ -8,20 +8,20 @@
     padding: 40px 0;
 }
 
-.game-card {
+.game-card-np {
     text-align: center;
     width: 40%;
     padding-bottom: 25px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     transform-origin: center;
 }
-.game-card:hover {
+.game-card-np:hover {
     transform: scale(1.25);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.55);
 }
 
 
-.game-card img {
+.game-card-np img {
     width: 100%;
     height: 260px; 
     object-fit: cover;

@@ -78,11 +78,11 @@ const sales = [
 export default function GamesPage() {
   return (
     <>
-        <h4 className='page-title'>Our Best Games</h4>
-        <hr className='legendary-blue-color main-hr'/>
-        <div className="games-section">
+        <h5 >Our Best Games</h5>
+        <hr className=''/>
+        <div className="games-grid">
             {games.map((game, index) => (
-                <div className="game-card" key={index}>
+                <div className="game-card-gp" key={index}>
                 <img src={game.img} alt={game.title} />
                 <h4>{game.title}</h4>
                 <p>{game.price}</p>

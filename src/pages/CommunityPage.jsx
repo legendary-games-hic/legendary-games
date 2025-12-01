@@ -1,7 +1,7 @@
 // src/pages/CommunityPage.jsx
 import { useState } from 'react';
 import '../assets/css/CommunityPage.css';
-import '../assets/css/NewsPage.css'
+// import '../assets/css/NewsPage.css'
 
 import cs2Cover from '../assets/images/cs2.png'
 import bf6Cover from '../assets/images/bf6.png'
@@ -121,13 +121,13 @@ export default function CommunityPage() {
           <aside className="community-sidebar">
 
             <h5 className="legendary-green-color community-title">Gaming News</h5>
-              <div className="game-card">
+              <div className="community-game-card">
                 <img src={cs2Cover} alt="CS2 Update" className="news-img-l" />
                 <p className="game-title">VALVE announce new big update for CS2!</p>
                 <button className="learn-btn">Learn more</button>
               </div>
 
-              <div className="game-card">
+              <div className="community-game-card">
                 <img src={bf6Cover} alt="Battlefield 6" className="news-img-l" />
                 <p className="game-title">Brand new Battlefield 6 is already out!</p>
                 <button className="learn-btn">Learn more</button>

@@ -19,13 +19,13 @@ export default function NewsPage(){
                 <h4 className='page-title'>Legendary Games News</h4>
                 <hr className='legendary-blue-color main-hr'/>
                 <div class="games-section">
-                    <div class="game-card">
+                    <div class="game-card-np">
                         <img src={cs2Cover} alt="CS2 Update" className='news-img-l'/>
                         <p class="game-title">VALVE announce new big update for CS2!</p>
                         <button class="learn-btn">Learn more</button>
                     </div>
 
-                    <div class="game-card">
+                    <div class="game-card-np">
                         <img src={bf6Cover} alt="Battlefield 6" className='news-img-l'/>
                         <p class="game-title">Brand new Battlefield 6 is already out!</p>
                         <button class="learn-btn">Learn more</button>

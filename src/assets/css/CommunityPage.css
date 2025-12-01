@@ -117,7 +117,7 @@
 /* Two-column layout: left = threads, right = news */
 .community-main-grid {
   display: grid;
-  grid-template-columns: 80% 80%; /* adjust to 75/25 or 65/35 if you want */
+  grid-template-columns: 75% 25%; /* adjust to 75/25 or 65/35 if you want */
   gap: 1.5rem;
 }
 
@@ -160,4 +160,17 @@
 .community-sidebar .main-hr {
   margin-top: 0rem;     
   margin-bottom: 1 rem;   
+}
+
+.community-game-card {
+    text-align: center;
+    width:10;
+}
+
+.community-game-card img {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
 }
