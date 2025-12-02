@@ -11,6 +11,7 @@
 
 ### How to run
 - Have node.JS installed
+- run `npm install` to install all the dependencies in `/node_modules`
 - run `npm run dev` to start the webserver locally
 
 # API key setup
