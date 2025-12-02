@@ -74,3 +74,7 @@
     margin-bottom: 0.5vh;
     align-self: flex-end;
 }
+
+.detailed-game-favorite-button:hover{
+    background-color: #5a97ed;
+}
